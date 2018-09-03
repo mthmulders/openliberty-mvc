@@ -2,13 +2,15 @@ package it.mulders.junk.mvc.presentation;
 
 import it.mulders.junk.mvc.service.TimeService;
 
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.mvc.Models;
-import javax.mvc.annotation.Controller;
-import javax.mvc.annotation.View;
+import javax.mvc.Controller;
+import javax.mvc.View;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
+@RequestScoped
 @Controller
 @Path("hello")
 public class HelloController {
