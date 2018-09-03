@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <server description="defaultServer">
     <featureManager>
-        <feature>jaxrs-2.0</feature>
+        <feature>beanValidation-2.0</feature>
+        <feature>cdi-2.0</feature>
+        <feature>jaxrs-2.1</feature>
+        <feature>jsp-2.3</feature>
     </featureManager>
 
     <httpEndpoint id="defaultHttpEndpoint"
