@@ -5,6 +5,6 @@
 </head>
 <body>
 <h1>Hello, ${greeting.name}</h1>
-<div>Current date and time is ${greeting.currentDateTime}</div>
+<div>Current date and time is: ${greeting.currentDateTime}</div>
 </body>
 </html>
