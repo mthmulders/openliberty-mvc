@@ -1,6 +1,6 @@
 package it.mulders.junk.mvc.presentation;
 
-import it.mulders.junk.mvc.service.TimeService;
+import it.mulders.junk.mvc.service.GreetingService;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
@@ -9,6 +9,7 @@ import javax.mvc.Controller;
 import javax.mvc.View;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.QueryParam;
 
 @RequestScoped
 @Controller
@@ -18,11 +19,11 @@ public class HelloController {
     Models models;
 
     @Inject
-    TimeService timeService;
+    GreetingService greetingService;
 
     @GET
     @View("hello.jsp")
-    public void hello() {
-        models.put("currentDateTime", timeService.currentDateTime());
+    public void hello(@QueryParam("name") final String name) {
+        models.put("greeting", greetingService.generateGreeting(name));
     }
 }

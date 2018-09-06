@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
 <head>
-    <title>Hello Ozark</title>
+    <title>Hello MVC</title>
 </head>
 <body>
-<h1>Hello, world</h1>
-<div>Current date and time is ${currentDateTime}</div>
+<h1>Hello, ${greeting.name}</h1>
+<div>Current date and time is ${greeting.currentDateTime}</div>
 </body>
 </html>
