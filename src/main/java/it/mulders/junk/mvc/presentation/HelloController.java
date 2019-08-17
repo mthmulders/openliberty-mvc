@@ -5,9 +5,9 @@ import it.mulders.junk.mvc.service.GreetingService;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.mvc.Models;
-import javax.mvc.Controller;
-import javax.mvc.View;
-import javax.mvc.security.CsrfProtected;
+import javax.mvc.annotation.Controller;
+import javax.mvc.annotation.View;
+import javax.mvc.annotation.CsrfValid;
 import javax.ws.rs.GET;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.Path;
@@ -42,7 +42,7 @@ public class HelloController {
         }
     }
 
-    @CsrfProtected
+    @CsrfValid
     @POST
     @Path("/configure")
     @View("redirect:/hello")
