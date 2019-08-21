@@ -90,7 +90,7 @@
                             <assemblyArtifact>
                                 <groupId>io.openliberty</groupId>
                                 <artifactId>openliberty-runtime</artifactId>
-                                <version>18.0.0.2</version>
+                                <version>19.0.0.8</version>
                                 <type>zip</type>
                             </assemblyArtifact>
                             <bootstrapProperties>
