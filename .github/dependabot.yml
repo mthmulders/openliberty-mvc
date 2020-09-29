@@ -11,3 +11,6 @@ updates:
     versions:
     - ">= 8.0.1.a"
     - "< 8.0.2"
+  - dependency-name: javax.mvc-api
+    versions:
+    - "1.0-pr"
