@@ -13,22 +13,49 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <failOnMissingWebXml>false</failOnMissingWebXml>
 
-        <krazo.version>1.0.0</krazo.version>
+        <jakarta-ee.version>9.0.0</jakarta-ee.version>
+        <krazo.version>2.0.1</krazo.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>jakarta.platform</groupId>
+                <artifactId>jakarta.jakartaee-bom</artifactId>
+                <version>${jakarta-ee.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>8.0</version>
+            <groupId>jakarta.ws.rs</groupId>
+            <artifactId>jakarta.ws.rs-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.enterprise</groupId>
+            <artifactId>jakarta.enterprise.cdi-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.inject</groupId>
+            <artifactId>jakarta.inject-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
             <scope>provided</scope>
         </dependency>
 
 
         <dependency>
-            <groupId>javax.mvc</groupId>
-            <artifactId>javax.mvc-api</artifactId>
-            <version>1.0.0</version>
+            <groupId>jakarta.mvc</groupId>
+            <artifactId>jakarta.mvc-api</artifactId>
+            <version>2.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.krazo</groupId>
@@ -37,7 +64,7 @@
         </dependency>
         <dependency>
             <groupId>org.eclipse.krazo</groupId>
-            <artifactId>krazo-cxf</artifactId>
+            <artifactId>krazo-resteasy</artifactId>
             <version>${krazo.version}</version>
         </dependency>
 
@@ -58,6 +85,7 @@
                 <version>3.6.1</version>
                 <configuration>
                     <libertyRuntimeVersion>22.0.0.4</libertyRuntimeVersion>
+                    <template>jakartaee9</template>
                 </configuration>
             </plugin>
             <plugin>

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <server description="defaultServer">
     <featureManager>
-        <feature>beanValidation-2.0</feature>
-        <feature>cdi-2.0</feature>
-        <feature>jaxrs-2.1</feature>
-        <feature>jsp-2.3</feature>
+        <feature>jakartaee-9.1</feature>
     </featureManager>
 
     <variable name="default.http.port" defaultValue="9080" />

@@ -1,7 +1,7 @@
 package it.mulders.junk.mvc.service;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.inject.Produces;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.inject.Produces;
 import java.time.Clock;
 
 /**

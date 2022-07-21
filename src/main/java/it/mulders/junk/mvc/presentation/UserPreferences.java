@@ -1,6 +1,6 @@
 package it.mulders.junk.mvc.presentation;
 
-import javax.enterprise.context.SessionScoped;
+import jakarta.enterprise.context.SessionScoped;
 import java.io.Serializable;
 import java.util.Locale;
 

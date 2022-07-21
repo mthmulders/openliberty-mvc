@@ -2,17 +2,17 @@ package it.mulders.junk.mvc.presentation;
 
 import it.mulders.junk.mvc.service.GreetingService;
 
-import javax.enterprise.context.RequestScoped;
-import javax.inject.Inject;
-import javax.mvc.Models;
-import javax.mvc.Controller;
-import javax.mvc.View;
-import javax.mvc.security.CsrfProtected;
-import javax.ws.rs.GET;
-import javax.ws.rs.FormParam;
-import javax.ws.rs.Path;
-import javax.ws.rs.POST;
-import javax.ws.rs.QueryParam;
+import jakarta.enterprise.context.RequestScoped;
+import jakarta.inject.Inject;
+import jakarta.mvc.Models;
+import jakarta.mvc.Controller;
+import jakarta.mvc.View;
+import jakarta.mvc.security.CsrfProtected;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.FormParam;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.QueryParam;
 import java.util.Locale;
 
 @RequestScoped
